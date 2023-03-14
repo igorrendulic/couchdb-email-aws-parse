@@ -1,49 +1,74 @@
 {
-    "notificationType": "Bounce",
-    "bounce": {
-        "feedbackId": "01010186dc33f732-1318b529-d0d2-4c4f-9199-f39a3437ead1-000000",
-        "bounceType": "Permanent",
-        "bounceSubType": "General",
-        "bouncedRecipients": [{
-            "emailAddress": "bounce@simulator.amazonses.com",
-            "action": "failed",
-            "status": "5.1.1",
-            "diagnosticCode": "smtp; 550 5.1.1 user unknown"
-        }],
-        "timestamp": "2023-03-13T18:20:38.000Z",
-        "remoteMtaIp": "52.4.13.254",
-        "reportingMTA": "dns; a27-35.smtp-out.us-west-2.amazonses.com"
+    "notificationType":"Bounce",
+    "bounce":{
+       "bounceType":"Permanent",
+       "reportingMTA":"dns; email.example.com",
+       "bouncedRecipients":[
+          {
+             "emailAddress":"jane@example.com",
+             "status":"5.1.1",
+             "action":"failed",
+             "diagnosticCode":"smtp; 550 5.1.1 <jane@example.com>... User"
+          }
+       ],
+       "bounceSubType":"General",
+       "timestamp":"2016-01-27T14:59:38.237Z",
+       "feedbackId":"00000138111222aa-33322211-cccc-cccc-cccc-ddddaaaa068a-000000",
+       "remoteMtaIp":"127.0.2.0"
     },
-    "mail": {
-        "timestamp": "2023-03-13T18:20:37.754Z",
-        "source": "example@mail.io",
-        "sourceArn": "arn:aws:ses:us-west-2:121216938247:identity/mail.io",
-        "sourceIp": "136.36.93.61",
-        "callerIdentity": "root",
-        "sendingAccountId": "121216938247",
-        "messageId": "01010186dc33f3fa-1cd86c0c-ffff-4e25-bc44-0d0e32f5167d-000000",
-        "destination": ["bounce@simulator.amazonses.com"],
-        "headersTruncated": false,
-        "headers": [{
-            "name": "From",
-            "value": "example@mail.io"
-        }, {
-            "name": "To",
-            "value": "bounce@simulator.amazonses.com"
-        }, {
-            "name": "Subject",
-            "value": "bouncing it"
-        }, {
-            "name": "MIME-Version",
-            "value": "1.0"
-        }, {
-            "name": "Content-Type",
-            "value": "multipart/alternative;  boundary=\"----=_Part_112055_1678716824.1678731637759\""
-        }],
-        "commonHeaders": {
-            "from": ["example@mail.io"],
-            "to": ["bounce@simulator.amazonses.com"],
-            "subject": "bouncing it"
+    "mail":{
+       "timestamp":"2016-01-27T14:59:38.237Z",
+       "source":"john@example.com",
+       "sourceArn": "arn:aws:ses:us-east-1:888888888888:identity/example.com",
+       "sourceIp": "127.0.3.0",
+       "sendingAccountId":"123456789012",
+       "callerIdentity": "IAM_user_or_role_name",
+       "messageId":"00000138111222aa-33322211-cccc-cccc-cccc-ddddaaaa0680-000000",
+       "destination":[
+         "jane@example.com",
+         "mary@example.com",
+         "richard@example.com"],
+       "headersTruncated":false,
+       "headers":[ 
+        { 
+          "name":"From",
+          "value":"\"John Doe\" <john@example.com>"
+        },
+        { 
+          "name":"To",
+          "value":"\"Jane Doe\" <jane@example.com>, \"Mary Doe\" <mary@example.com>, \"Richard Doe\" <richard@example.com>"
+        },
+        { 
+          "name":"Message-ID",
+          "value":"custom-message-ID"
+        },
+        { 
+          "name":"Subject",
+          "value":"Hello"
+        },
+        { 
+          "name":"Content-Type",
+          "value":"text/plain; charset=\"UTF-8\""
+        },
+        { 
+          "name":"Content-Transfer-Encoding",
+          "value":"base64"
+        },
+        { 
+          "name":"Date",
+          "value":"Wed, 27 Jan 2016 14:05:45 +0000"
         }
-    }
-}
+       ],
+       "commonHeaders":{ 
+          "from":[ 
+             "John Doe <john@example.com>"
+          ],
+          "date":"Wed, 27 Jan 2016 14:05:45 +0000",
+          "to":[ 
+             "Jane Doe <jane@example.com>, Mary Doe <mary@example.com>, Richard Doe <richard@example.com>"
+          ],
+          "messageId":"custom-message-ID",
+          "subject":"Hello"
+        }
+     }
+ }
