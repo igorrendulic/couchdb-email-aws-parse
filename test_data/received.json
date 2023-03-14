@@ -1,0 +1,109 @@
+{
+    "notificationType": "Received",
+    "mail": {
+        "timestamp": "2023-03-13T20:08:18.906Z",
+        "source": "example@example.com",
+        "messageId": "4lemd3cvrcl5fefchgm609pk8iihuj0hhca8fe81",
+        "destination": ["example@mail.io"],
+        "headersTruncated": false,
+        "headers": [{
+            "name": "Return-Path",
+            "value": "<example@example.com>"
+        }, {
+            "name": "Received",
+            "value": "from mail-wm1-f47.google.com (mail-wm1-f47.google.com [209.85.128.47]) by inbound-smtp.us-west-2.amazonaws.com with SMTP id 4lemd3cvrcl5fefchgm609pk8iihuj0hhca8fe81 for example@mail.io; Mon, 13 Mar 2023 20:08:18 +0000 (UTC)"
+        }, {
+            "name": "X-SES-Spam-Verdict",
+            "value": "PASS"
+        }, {
+            "name": "X-SES-Virus-Verdict",
+            "value": "PASS"
+        }, {
+            "name": "Received-SPF",
+            "value": "pass (spfCheck: domain of _spf.google.com designates 209.85.128.47 as permitted sender) client-ip=209.85.128.47; envelope-from=example@example.com; helo=mail-wm1-f47.google.com;"
+        }, {
+            "name": "Authentication-Results",
+            "value": "amazonses.com; spf=pass (spfCheck: domain of _spf.google.com designates 209.85.128.47 as permitted sender) client-ip=209.85.128.47; envelope-from=example@example.com; helo=mail-wm1-f47.google.com; dkim=pass header.i=@gmail.com; dmarc=pass header.from=gmail.com;"
+        }, {
+            "name": "X-SES-RECEIPT",
+            "value": "AEFBQUFBQUFBQUFGUVBWc3B3UU5DTXZPdEp4amFPa25aUm5Ld3d6bDRFa2Q1RTB3alN0N0g3MmQzM0V6SmtKSWRheVF5L3g2SUJmdm1sdDQ2clh2ODFCQ2psSXI0UEV3UFdDR2tBVEw0Y3cxMldpNEI0YU5RVzAyRnVzMElJU0tSN25TaDRCeFh1Y0VXTDFlK1pSL0tTVStwTjl0MlUrMjlSalBoZ1R6TFZmYVJHSlZTNEQvL28ycFNGTE9JMFowWFdKUlBBdFBYaHpTbEk0THp6YUJQSlBrVTdtNk1ucUFXa1c1ZTJpQ2dRa3Q3c1dpYW1Pc0xna1BmVnVsL1BVNzl1T3N2b0Z4R1BoeC9YYzFpTkFxVXpramtINVhtb1dENTJveTkyUzJlU2s0bUhjL2VRUFB4YkE9PQ=="
+        }, {
+            "name": "X-SES-DKIM-SIGNATURE",
+            "value": "a=rsa-sha256; q=dns/txt; b=rI/bnfZFC6v4+NHDOxHnp307GQhWe+6JrBlvc0DxslDwIl15Xfuuj5yOFqCoXRm0bRL7ex3VbdNBN2TWEmhW5Xs611XQWDoXUoku41cKTVzLZWTkM9umBDCFDQ/R2DLabNyOoGWewJMxGH1oWpOmB0os7cl0Hz9Co7h//EdmzzY=; c=relaxed/simple; s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1678738099; v=1; bh=iCb3RXHpoewh9dPL1anFr/XBmXsyrYAGLIQweCGS7bU=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;"
+        }, {
+            "name": "Received",
+            "value": "by mail-wm1-f47.google.com with SMTP id p23-20020a05600c1d9700b003ead4835046so7983875wms.0 for <example@mail.io>; Mon, 13 Mar 2023 13:08:18 -0700 (PDT)"
+        }, {
+            "name": "DKIM-Signature",
+            "value": "v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20210112; t=1678738096; h=to:subject:message-id:date:from:mime-version:from:to:cc:subject:date:message-id:reply-to; bh=iCb3RXHpoewh9dPL1anFr/XBmXsyrYAGLIQweCGS7bU=; b=BGnUCo05l9jnIkXVE2A/hHRWZW6BKnVMA39pR3b4yNkTdsD1GBh9Evw+C9iziZTjNrnPaMjUunSrN792yLYvHvVMThfwJYtPIwzzyjJkJFiddpKfSEGDaxECLBP92oM+yWzTiZ4iyFcEFcx6FKGam5mKOwMC0wmCvXWLOx5CPeK8JJjSMo/Mj+F96aBvPK3RYOSfLHwf0cFiR3JYKSFo45A/rMgJ26JgJVKKuA6IVnhEaoQ01SkiR65pgPnfRadEZhzEYRPqGG2VfuTmKOLachLJ1QA1kvBTK6po37lOfTwN6Xqp0wnOJOaMW0nflMwJ/e5Bl7Mg9d2OF7qwppbK+Q=="
+        }, {
+            "name": "X-Google-DKIM-Signature",
+            "value": "v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20210112; t=1678738096; h=to:subject:message-id:date:from:mime-version:x-gm-message-state :from:to:cc:subject:date:message-id:reply-to; bh=iCb3RXHpoewh9dPL1anFr/XBmXsyrYAGLIQweCGS7bU=; b=0t4VHQS710eSIoMLuNbkBi8oJzQn6wrds8BGUsIOEFdoUTQfXdoG5pdEBp6GcgVuD8 bNd4N12srxtG41V9CZI04GdacUFwNg18TbSEeyCSXLYifTBzHBVle+u5C+9xslQdtKoP WPS8fIVRmaY5idryWfUnKLHNs7jnzk+7GW81Yl7ECb3csVfavDQ0u/T8Mi4N6DHO8Az1 nk8+rd6vvjZeK3pYKjJib0I1n9DWpzL4zVMHiU4jbWftXrOPLBmnWlUFTyP+G/uA/rIN 3Kj50DW5EqY3P1cpjaLxRY1YWJx3JXkNxneILcjwYVTWRxt+dMbd1fEeUeAM0FTQXC5Y qQtg=="
+        }, {
+            "name": "X-Gm-Message-State",
+            "value": "AO0yUKXqnjSCOtAJ4u+P7hTo9zc7xVNyFw/8FrOI2VmfoyO74gYExgWx hc1Jz1Gpgf0oyd08okjR9KsJLAhrZ/ifem+WKfI/7Clk"
+        }, {
+            "name": "X-Google-Smtp-Source",
+            "value": "AK7set+htZ+RBlZ9aFuTA9sbYhob28UB6Zfh+N+YYw+KF+dq9QiH4jXPZfy7ElyjhND0e5SQ2NpTdLObeGVhsN022mc="
+        }, {
+            "name": "X-Received",
+            "value": "by 2002:a05:600c:3ba5:b0:3ed:29a5:b470 with SMTP id n37-20020a05600c3ba500b003ed29a5b470mr711213wms.7.1678738096343; Mon, 13 Mar 2023 13:08:16 -0700 (PDT)"
+        }, {
+            "name": "MIME-Version",
+            "value": "1.0"
+        }, {
+            "name": "From",
+            "value": "Igor Rendulic <example@example.com>"
+        }, {
+            "name": "Date",
+            "value": "Mon, 13 Mar 2023 14:08:05 -0600"
+        }, {
+            "name": "Message-ID",
+            "value": "<CADUk_sVGD=+1Soe+tJH5Lp9uyMZMwRCyYv6xSEXXV0jVDAQ7xA@mail.gmail.com>"
+        }, {
+            "name": "Subject",
+            "value": "howdi"
+        }, {
+            "name": "To",
+            "value": "example@mail.io"
+        }, {
+            "name": "Content-Type",
+            "value": "text/plain; charset=\"UTF-8\""
+        }],
+        "commonHeaders": {
+            "returnPath": "example@example.com",
+            "from": ["Igor Rendulic <example@example.com>"],
+            "date": "Mon, 13 Mar 2023 14:08:05 -0600",
+            "to": ["example@mail.io"],
+            "messageId": "<CADUk_sVGD=+1Soe+tJH5Lp9uyMZMwRCyYv6xSEXXV0jVDAQ7xA@mail.gmail.com>",
+            "subject": "howdi"
+        }
+    },
+    "receipt": {
+        "timestamp": "2023-03-13T20:08:18.906Z",
+        "processingTimeMillis": 794,
+        "recipients": ["example@mail.io"],
+        "spamVerdict": {
+            "status": "PASS"
+        },
+        "virusVerdict": {
+            "status": "PASS"
+        },
+        "spfVerdict": {
+            "status": "PASS"
+        },
+        "dkimVerdict": {
+            "status": "PASS"
+        },
+        "dmarcVerdict": {
+            "status": "PASS"
+        },
+        "action": {
+            "type": "S3",
+            "topicArn": "arn:aws:sns:us-west-2:123456:receive",
+            "bucketName": "dev-mailiomailplainreceived",
+            "objectKeyPrefix": "",
+            "objectKey": "4lemd3cvrcl5fefchgm609pk8iihuj0hhca8fe81"
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "notificationType": "Bounce",
+    "bounce": {
+        "feedbackId": "01010186dc33f732-1318b529-d0d2-4c4f-9199-f39a3437ead1-000000",
+        "bounceType": "Permanent",
+        "bounceSubType": "General",
+        "bouncedRecipients": [{
+            "emailAddress": "bounce@simulator.amazonses.com",
+            "action": "failed",
+            "status": "5.1.1",
+            "diagnosticCode": "smtp; 550 5.1.1 user unknown"
+        }],
+        "timestamp": "2023-03-13T18:20:38.000Z",
+        "remoteMtaIp": "52.4.13.254",
+        "reportingMTA": "dns; a27-35.smtp-out.us-west-2.amazonses.com"
+    },
+    "mail": {
+        "timestamp": "2023-03-13T18:20:37.754Z",
+        "source": "example@mail.io",
+        "sourceArn": "arn:aws:ses:us-west-2:121216938247:identity/mail.io",
+        "sourceIp": "136.36.93.61",
+        "callerIdentity": "root",
+        "sendingAccountId": "121216938247",
+        "messageId": "01010186dc33f3fa-1cd86c0c-ffff-4e25-bc44-0d0e32f5167d-000000",
+        "destination": ["bounce@simulator.amazonses.com"],
+        "headersTruncated": false,
+        "headers": [{
+            "name": "From",
+            "value": "example@mail.io"
+        }, {
+            "name": "To",
+            "value": "bounce@simulator.amazonses.com"
+        }, {
+            "name": "Subject",
+            "value": "bouncing it"
+        }, {
+            "name": "MIME-Version",
+            "value": "1.0"
+        }, {
+            "name": "Content-Type",
+            "value": "multipart/alternative;  boundary=\"----=_Part_112055_1678716824.1678731637759\""
+        }],
+        "commonHeaders": {
+            "from": ["example@mail.io"],
+            "to": ["bounce@simulator.amazonses.com"],
+            "subject": "bouncing it"
+        }
+    }
+}

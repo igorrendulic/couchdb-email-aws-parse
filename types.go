@@ -1,4 +1,4 @@
-package awsparser
+package awshandler
 
 var AwsCredCtxKey = &AwsContextKey{"awsCred"}
 

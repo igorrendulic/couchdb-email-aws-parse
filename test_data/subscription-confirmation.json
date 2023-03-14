@@ -1,0 +1,12 @@
+{
+    "Type": "SubscriptionConfirmation",
+    "MessageId": "2a7df021-9587-4559-b265-ec9fb1316695",
+    "Token": "2336412f37fb687f5d51e6e2425c464de63b4730d3a21d69a4fc0ff1e26a3ee5dfc6cad4223b65ccdaeafbbf0f9397895f5a1b0709cd5945d942bf9a94a70571440ecdd11d5e20654afa37411481dccc93d12cf52b0df634e7d6df8faae54abcddb6303f5d118d65e2f76624b73f76049b61d7534965d5150f8310e8535733ed",
+    "TopicArn": "arn:aws:sns:us-west-2:121216938247:mailiomail-bounce-topic",
+    "Message": "You have chosen to subscribe to the topic arn:aws:sns:us-west-2:121216938247:mailiomail-bounce-topic.\nTo confirm the subscription, visit the SubscribeURL included in this message.",
+    "SubscribeURL": "https://sns.us-west-2.amazonaws.com/?Action=ConfirmSubscription&TopicArn=arn:aws:sns:us-west-2:121216938247:mailiomail-bounce-topic&Token=2336412f37fb687f5d51e6e2425c464de63b4730d3a21d69a4fc0ff1e26a3ee5dfc6cad4223b65ccdaeafbbf0f9397895f5a1b0709cd5945d942bf9a94a70571440ecdd11d5e20654afa37411481dccc93d12cf52b0df634e7d6df8faae54abcddb6303f5d118d65e2f76624b73f76049b61d7534965d5150f8310e8535733ed",
+    "Timestamp": "2023-03-13T19:58:30.109Z",
+    "SignatureVersion": "1",
+    "Signature": "iStgKvT4s0L8fg8Czal05zTUeAarwIDPNZeu7WsuM1KL+H+YIXz1UaKezOcANzxrehm4Url8Aw/DPM6OxVpCAUP8hJBiWNWgwskstQWCe3Fe3NRTa0Gbfzx9riw1F5LRNP/EKaC49YI1PFlTUQOK2EP/2lsT5EVasyPNSAloP2ZuOghflzT2Aom0/mhYov8ZzHiSZKK5o2fbDA5D8nxk5otQQv+mtHha8V1k3lrc4PZMS3hbZUZzvhD/CfFXErZzT8ZBBzMrxbzH8kPv/dq9L8XlSaoZFh7klnaQ6LmxThEBNt2YBTg/rcOK76oojctqnKRGUMVPPg/UY66YlgKDfA==",
+    "SigningCertURL": "https://sns.us-west-2.amazonaws.com/SimpleNotificationService-56e67fcb41f6fec09b0196692625d385.pem"
+}
